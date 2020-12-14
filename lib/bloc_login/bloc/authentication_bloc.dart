@@ -4,7 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:equatable/equatable.dart';
 
-import 'package:bloc_login/repository/user_repository.dart';
+import 'package:jagrukkisaan/bloc_login/repository/user_repository.dart';
 import '../model/user_model.dart';
 
 part 'authentication_event.dart';
@@ -47,7 +47,7 @@ class AuthenticationBloc
     if (event is LoggedOut) {
       yield AuthenticationLoading();
 
-      await userRepository.delteToken(id: 0);
+      await userRepository.deleteToken(id: 0);
 
       yield AuthenticationUnauthenticated();
     }
