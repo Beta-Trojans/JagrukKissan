@@ -46,6 +46,8 @@ class DatabaseProvider {
       "CREATE TABLE $userTable ("
       "id INTEGER PRIMARY KEY, "
       "username TEXT, "
+      "contact TEXT, "
+      "pincode TEXT, "
       "token TEXT "
       ")"
     );

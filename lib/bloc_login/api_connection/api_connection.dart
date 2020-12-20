@@ -4,7 +4,7 @@ import 'dart:convert';
 import '../model/api_model.dart';
 import 'package:http/http.dart' as http;
 
-final _base = "https://home-hub-app.herokuapp.com";
+final _base = "https://jagrukkisan.herokuapp.com";
 final _tokenEndpoint = "/api-token-auth/";
 final _tokenURL = _base + _tokenEndpoint;
 
